@@ -1,0 +1,6 @@
+Flask
+mysql-connector-python
+requests
+matplotlib
+seaborn
+sqlalchemy

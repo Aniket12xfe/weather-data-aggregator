@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center">Visualize Weather Data</h2>
+    <form class="mt-4" method="get" action="{{ url_for('visualize') }}">
+        <div class="form-row">
+            <div class="col-md-5">
+                <input type="date" class="form-control" name="start_date" placeholder="Start Date" required>
+            </div>
+            <div class="col-md-5">
+                <input type="date" class="form-control" name="end_date" placeholder="End Date" required>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary btn-block">Filter</button>
+            </div>
+        </div>
+    </form>
+    <div class="row mt-5">
+        <div class="col-md-12">
+            {% if image %}
+            <img src="{{ url_for('static', filename=image) }}" alt="Weather Trends" class="img-fluid">
+            {% else %}
+            <p>No data available for visualization.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

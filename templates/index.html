@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron text-center bg-light">
+    <h1 class="display-4">Welcome to Weather Data Aggregator and Analyzer</h1>
+    <p class="lead">Fetch, visualize, and analyze weather data in real-time.</p>
+    <hr class="my-4">
+    <p>Use the navigation bar to fetch new data, visualize trends, and perform statistical analysis.</p>
+    <a class="btn btn-primary btn-lg" href="/fetch" role="button">Fetch Data</a>
+</div>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/912364/pexels-photo-912364.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Sunny Weather">
+                <div class="card-body">
+                    <h5 class="card-title">Sunny Days</h5>
+                    <p class="card-text">Analyze the impact of sunny weather on temperatures and conditions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/459451/pexels-photo-459451.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Rainy Weather">
+                <div class="card-body">
+                    <h5 class="card-title">Rainy Days</h5>
+                    <p class="card-text">Discover patterns and trends during rainy periods.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/1446076/pexels-photo-1446076.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Stormy Weather">
+                <div class="card-body">
+                    <h5 class="card-title">Stormy Days</h5>
+                    <p class="card-text">Examine the effects of storms on local weather conditions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

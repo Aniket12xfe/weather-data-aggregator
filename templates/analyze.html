@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center">Weather Data Analysis</h2>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h3>Average Temperature</h3>
+            <p class="lead">{{ avg_temp }} &deg;C</p>
+        </div>
+        <div class="col-md-6">
+            <h3>Average Humidity</h3>
+            <p class="lead">{{ avg_humidity }} %</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h3>Temperature Distribution</h3>
+            <img src="{{ url_for('static', filename=temp_hist) }}" alt="Temperature Histogram" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <h3>Humidity Distribution</h3>
+            <img src="{{ url_for('static', filename=humidity_hist) }}" alt="Humidity Histogram" class="img-fluid">
+        </div>
+    </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center">Weather Distribution Pie Chart</h1>
+    <div class="text-center">
+        <img src="{{ url_for('static', filename=image_pie) }}" alt="Weather Pie Chart" class="img-fluid">
+    </div>
+</div>
+{% endblock %}
