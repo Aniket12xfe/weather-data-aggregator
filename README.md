@@ -9,7 +9,7 @@
 - [Running the Application](#running-the-application)
 - [Usage](#usage)
 - [Code Structure](#code-structure)
-- [Comments and Docstrings](#comments-and-docstrings)
+- [API Reference](#api-reference)
 
 ## Introduction
 The Weather Data Aggregator and Analyzer is a Python web application that allows users to fetch, visualize, and analyze weather data in real-time. The application fetches data from the OpenWeatherMap API, stores it in a MySQL database, and provides various visualizations and analyses through a Flask web interface.
