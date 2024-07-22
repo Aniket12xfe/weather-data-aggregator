@@ -101,19 +101,32 @@ The Weather Data Aggregator and Analyzer is a Python web application that allows
   ![Analyze Data](https://github.com/user-attachments/assets/b50651d6-41ee-407d-983c-06aac1c73b4e)
 
 ## Code Structure
-
-- `app.py`: Main Flask application file.
-- `fetch_weather.py`: Contains the function to fetch weather data from the API.
-- `config.py`: Contains database configuration details.
-- `templates/`: Directory containing HTML templates.
-  - `base.html`: Base template.
-  - `index.html`: Home page template.
-  - `visualize.html`: Template for visualizing data.
-  - `analyze.html`: Template for analyzing data.
-- `static/`: Directory containing static files like CSS, JavaScript, and images.
-  - `css/`: Custom CSS files.
-  - `js/`: Custom JavaScript files.
-  - `images/`: Images used in the project.
+```
+weather-data-aggregator/
+│
+├── app.py
+├── config.py
+├── fetch_weather.py
+├── requirements.txt
+├── static/
+│   ├── css/
+│   │   └── styles.css
+│   ├── images/
+│   │   ├── overview.png
+│   │   ├── home_page.png
+│   │   ├── fetch_data.png
+│   │   ├── visualize_data.png
+│   │   └── analyze_data.png
+│   └── js/
+│       └── scripts.js
+├── templates/
+│   ├── base.html
+│   ├── index.html
+│   ├── visualize.html
+│   ├── analyze.html
+│   └── pie.html
+└── README.md
+```
 
 ## API Reference
 
