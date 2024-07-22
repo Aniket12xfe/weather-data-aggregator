@@ -4,7 +4,7 @@ from config import DB_CONFIG
 import mysql.connector
 from mysql.connector import Error
 
-API_KEY = '52b70925a0474e9834ce0a289afad5a9'
+API_KEY = 'your_api_key'
 LOCATION = 'London'
 
 
