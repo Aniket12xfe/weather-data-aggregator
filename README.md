@@ -63,11 +63,11 @@ The Weather Data Aggregator and Analyzer is a Python web application that allows
     - Run the following SQL command to create the necessary table:
       ```sql
       CREATE TABLE weather (
-          id INT AUTO_INCREMENT PRIMARY KEY,
-          timestamp DATETIME,
-          temperature FLOAT,
-          humidity INT,
-          wind_speed FLOAT
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        timestamp DATETIME NOT NULL,
+        temperature FLOAT NOT NULL,
+        humidity FLOAT NOT NULL,
+        wind_speed FLOAT NOT NULL
       );
       ```
 
