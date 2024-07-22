@@ -1,7 +1,5 @@
 # Weather Data Aggregator and Analyzer
 
-Weather Data Aggregator![Weather Data Aggregator and Analyzer - Brave 22-07-2024 11_25_02](https://github.com/user-attachments/assets/73c17776-c465-4aec-8f47-bd85fff45c82)
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
